@@ -17,7 +17,8 @@ function App() {
     setUserInput(prevUserInput => {
         return {
             ...prevUserInput,
-            [inputIdentifer]: newValue
+            // + 문자열값을 숫자형값으로 강제 변경
+            [inputIdentifer]: +newValue
         };
     });
   }
